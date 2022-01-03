@@ -1,10 +1,24 @@
-File System Project (Course information removed)
+# file-system
+This is a mock file system that was completed as an assignment for an operating systems course in the spring of 2019.
+
+Here are some quick notes:
+- The assignment description (project requirements) can be found in LLFS.pdf.
+- The io directory contains the implementation of the file system code.
+- The disk directory contains a basic interface to a virtual disk that writes and reads blocks to a vdisk (which is just a plain binary file).
+- The apps directory contains all of the tests that interact with the file system and demonstrate its functionality.
+- The tests can be run within the apps directory by running the test.sh script (which accompanies the tests with their appropriate hex dumps). From the main directory run ```cd apps && ./test.sh```
+- The output of the test.sh script can also be seen in output.txt
+
+The following is the write up for the original assignment submission...
+
+## File System Project
 
 Keanelek Enns
 
+Spring 2019
+
 RUNNING MY SCRIPT (test.sh):
-The bash script must be run from within the apps folder (everything will be in 
-a folder a3.zip, you unzip it and "cd a3/apps/"). Then, for whatever reason, the
+The bash script must be run from within the apps folder. If the
 script needs to be given executable permissions; do this with "chmod +x test.sh".
 Then simply run the script with "./test.sh" and it will make all of the test files
 as well as run them (it will produce a large amount of output, so just scroll to the 

@@ -232,7 +232,7 @@ int create_at(int dir, char* filename, int flags){
 		dir_data_block[0] = new_inode_id;//first entry of new directory
 		dir_data_block[1] = '.';
 		dir_data_block[ENTRY_SIZE] = dir;
-		strncpy((char*)dir_data_block + ENTRY_SIZE + 1 , "..", 2);
+		strncpy((char*)dir_data_block + ENTRY_SIZE + 1 , "..", 3);
 		
 		void* new_dir_inode = calloc(BLOCK_SIZE,1);
 		((int*)new_dir_inode)[0] = ENTRY_SIZE*2;

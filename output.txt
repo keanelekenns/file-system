@@ -1,4 +1,3 @@
-root@DESKTOP-561GH3H:/mnt/c/Users/Keanelek/Documents/3rd Year/Spring 2019/csc360/a3/apps# ./test.sh
 rm -f *.o ../disk/disk_controller.o ../io/File.o test01 test02 test03 test04 test05 test06 test07
 gcc -pedantic-errors -Werror -Wall -std=c11 -g test01.c ../disk/disk_controller.c ../io/File.c -o test01
 gcc -pedantic-errors -Werror -Wall -std=c11 -g test02.c ../disk/disk_controller.c ../io/File.c -o test02
@@ -592,9 +591,9 @@ ATTEMPTING TO READ 2MB FROM FILE (read should stop at filesize)
 
 DATA BUFFER AT INDEX 0: $
 DATA BUFFER AT INDEX filesize - 1: $
-DATA BUFFER AT INDEX filesize:
+DATA BUFFER AT INDEX filesize:  
 
-There is no hexdump for this test (it would be the same as the previous test.
+There is no hexdump for this test (it would be the same as the previous test).
 
 
 
@@ -944,3 +943,5 @@ CONTENTS OF VDISK AFTER TEST07:
 
 
 =============================================================================================
+
+
